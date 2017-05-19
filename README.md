@@ -1,4 +1,4 @@
-# Mobitor Cordova Secure Plugin
+# Mobitor Cordova Secure Plugin (ANDROID ONLY)
 
 > This plugin allows you to check if the device is secured either by pin, pattern, fingerprint, etc.
 
@@ -15,7 +15,7 @@ or via npm (It will be saved to the package.json file)
 npm (install|rm) mobitor-cordova-secure --save
 ```
 
-## Using the plugin (opens Location Settings in Android and Application Settings in iOS)
+## Using the plugin
 
 ```js
 window.mobitor.secure.isSecure(function (success) {
@@ -31,7 +31,7 @@ window.mobitor.secure.isSecure(function (success) {
 ```
 The MIT License
 
-Copyright (c) 2017 Yuan Tao
+Copyright (c) 2017 Mobitor
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
