@@ -1,0 +1,31 @@
+{
+  "name": "mobitor-cordova-secure",
+  "version": "0.1.1",
+  "description": "Mobitor Cordova Secure Plugin",
+  "cordova": {
+    "id": "mobitor-cordova-secure",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmoore6364/mobitor-cordova-secure.git"
+  },
+  "keywords": [
+    "cordova",
+    "secure",
+    "screen",
+    "lock",
+    "device",
+    "mobitor",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Jason Moore",
+  "license": "Mobitor",
+  "bugs": {
+    "url": "https://github.com/jmoore6364/mobitor-cordova-secure/issues"
+  },
+  "homepage": "https://github.com/jmoore6364/mobitor-cordova-secure#readme"
+}

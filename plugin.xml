@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="mobitor-cordova-secure" version="0.2.3">
+    <name>mobitor-cordova-secure</name>
+    <description>Mobitor Cordova Secure Plugin</description>
+    <license>Mobitor</license>
+    <keywords>cordova,secure,screen,lock,device,mobitor</keywords>
+    <js-module src="www/mobitorSecure.js" name="secure">
+        <clobbers target="window.mobitor.secure" />
+    </js-module>
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="MobitorSecure">
+                <param name="android-package" value="com.mobitor.cordova.secure.MobitorSecure"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/MobitorSecure.java" target-dir="src/com/mobitor/secure/" />
+    </platform>
+</plugin>
