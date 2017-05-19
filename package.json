@@ -1,6 +1,6 @@
 {
   "name": "mobitor-cordova-secure",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Mobitor Cordova Secure Plugin",
   "cordova": {
     "id": "mobitor-cordova-secure",
