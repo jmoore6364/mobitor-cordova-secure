@@ -6,7 +6,7 @@
     <license>Mobitor</license>
     <keywords>cordova,secure,screen,lock,device,mobitor</keywords>
     <js-module src="www/mobitorSecure.js" name="secure">
-        <clobbers target="window.mobitor.secure" />
+        <clobbers target="window.mobitor.secure"/>
     </js-module>
     <platform name="android">
         <config-file target="config.xml" parent="/*">
@@ -14,6 +14,15 @@
                 <param name="android-package" value="com.mobitor.cordova.secure.MobitorSecure"/>
             </feature>
         </config-file>
-        <source-file src="src/android/MobitorSecure.java" target-dir="src/com/mobitor/secure/" />
+        <source-file src="src/android/MobitorSecure.java" target-dir="src/com/mobitor/secure/"/>
+    </platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="MobitorSecure">
+                <param name="ios-package" value="ScreenLock"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/ScreenLock.h" target-dir="ScreenLockPlugin"/>
+        <source-file src="src/ios/ScreenLock.m" target-dir="ScreenLockPlugin"/>
     </platform>
 </plugin>
