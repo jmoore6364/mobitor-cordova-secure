@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="mobitor-cordova-secure" version="0.2.3">
+        id="mobitor-cordova-secure" version="0.2.4">
     <name>mobitor-cordova-secure</name>
     <description>Mobitor Cordova Secure Plugin</description>
     <license>Mobitor</license>
