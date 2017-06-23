@@ -11,6 +11,10 @@
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
 
+-(BOOL) isSecured {
+    return [self deviceHasPasscode];
+}
+
 -(BOOL) deviceHasPasscode {
     NSData* secret = [@"Device has passcode set?" dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *attributes = @{ (__bridge id)kSecClass: (__bridge id)kSecClassGenericPassword, (__bridge id)kSecAttrService: @"LocalDeviceServices",  (__bridge id)kSecAttrAccount: @"NoAccount", (__bridge id)kSecValueData: secret, (__bridge id)kSecAttrAccessible: (__bridge id)kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly };

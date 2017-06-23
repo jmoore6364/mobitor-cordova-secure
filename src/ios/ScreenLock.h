@@ -3,5 +3,6 @@
 @interface ScreenLock : CDVPlugin
 
 - (void) isScreenLockEnabled:(CDVInvokedUrlCommand*)command;
+- (BOOL) isSecured;
 
 @end
