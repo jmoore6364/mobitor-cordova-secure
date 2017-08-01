@@ -3,6 +3,6 @@
 @interface MobitorSecure : CDVPlugin
 
 - (void) isScreenLockEnabled:(CDVInvokedUrlCommand*)command;
-- (BOOL) isSecured;
+- (BOOL) isSecured:(CDVInvokedUrlCommand*)command;
 
 @end

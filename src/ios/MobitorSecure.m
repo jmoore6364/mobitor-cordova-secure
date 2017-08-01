@@ -11,7 +11,7 @@
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
 
--(BOOL) isSecured {
+-(BOOL) isSecured:(CDVInvokedUrlCommand*)command {
     return [self deviceHasPasscode];
 }
 
