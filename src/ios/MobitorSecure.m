@@ -1,4 +1,4 @@
-#import "ScreenLock.h"
+#import "MobitorSecure.h"
 
 @implementation MobitorSecure
 
