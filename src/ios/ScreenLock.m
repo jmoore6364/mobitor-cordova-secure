@@ -1,6 +1,6 @@
 #import "ScreenLock.h"
 
-@implementation ScreenLock
+@implementation MobitorSecure
 
 - (void)isScreenLockEnabled:(CDVInvokedUrlCommand*)command
 {
