@@ -1,6 +1,6 @@
-#import "ScreenLock.h"
+#import "MobitorSecure.h"
 
-@implementation ScreenLock
+@implementation MobitorSecure
 
 - (void)isScreenLockEnabled:(CDVInvokedUrlCommand*)command
 {
@@ -9,6 +9,10 @@
                                resultWithStatus:CDVCommandStatus_OK
                                messageAsInt:@(hasPasscode).integerValue];
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
+}
+
+-(BOOL) isSecured:(CDVInvokedUrlCommand*)command {
+    return [self deviceHasPasscode];
 }
 
 -(BOOL) deviceHasPasscode {

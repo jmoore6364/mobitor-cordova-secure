@@ -19,10 +19,10 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="MobitorSecure">
-                <param name="ios-package" value="ScreenLock"/>
+                <param name="ios-package" value="MobitorSecure"/>
             </feature>
         </config-file>
-        <header-file src="src/ios/ScreenLock.h" target-dir="ScreenLockPlugin"/>
-        <source-file src="src/ios/ScreenLock.m" target-dir="ScreenLockPlugin"/>
+        <header-file src="src/ios/MobitorSecure.h" target-dir="src/com/mobitor/secure/"/>
+        <source-file src="src/ios/MobitorSecure.m" target-dir="src/com/mobitor/secure/"/>
     </platform>
 </plugin>
